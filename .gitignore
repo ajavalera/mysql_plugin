@@ -1,0 +1,13 @@
+*
+
+!.gitignore
+!docs
+!docs/*
+!host_files
+!ftplugin
+!ftplugin/*
+!scripts
+!scripts/*
+!LICENCE.md
+!README.md
+!VERSION
