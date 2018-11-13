@@ -40,7 +40,7 @@ fun! Mysql_Exec(position)
     endif
 
     setlocal bufhidden=wipe nobuflisted noswapfile nowrap
-    execute '$read ! mysql -t -h' . g:mysql_host . ' -u' . g:mysql_user . ' -p' . g:mysql_password . ' < ./#'
+    execute '$read ! mysqlsh -h' . g:mysql_host . ' -u' . g:mysql_user . ' -p' . g:mysql_password .  ' --table --sqlc < ./#'
     1
 endfun
 
